@@ -10,7 +10,6 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 
 export function cargarTraductor(http: HttpClient) {
   let id = location.origin + '/gym/assets/i18n/'
-  console.log(id);
   return new TranslateHttpLoader(http, `${id}`,'.json');
 }
 
