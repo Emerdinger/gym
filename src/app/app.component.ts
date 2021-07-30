@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TraductorService } from './services/traductor.service';
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -7,21 +7,23 @@ import { TraductorService } from './services/traductor.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(private translate: TraductorService) {
-    
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('es');
+    this.translate.use('es');
   }
 
   ngOnInit(): void {
     if (localStorage.getItem('idioma') == 'es' || localStorage.getItem('idioma') == 'en') {
-      this.translate.cambio(localStorage.getItem('idioma'));
+      let id = localStorage.getItem('idioma');
+      this.translate.use(`${id}`);
     } else {
       localStorage.setItem('idioma', 'es');
-      this.translate.cambio('es');
+      this.translate.use('es');
     }
   }
 
   cambiarIdioma(_idioma: any){
     localStorage.setItem('idioma', _idioma);
-    this.translate.cambio(_idioma);
+    this.translate.use(_idioma);
   }
 }

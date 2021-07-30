@@ -14,7 +14,6 @@ export class TraductorService {
   }
 
   cambio(_idioma: any){
-    console.log(localStorage.getItem('idioma')+' xd')
     this.translate.use(_idioma);
   }
 }

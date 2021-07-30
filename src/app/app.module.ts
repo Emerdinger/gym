@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Location } from "@angular/common";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,7 +9,9 @@ import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 
 export function cargarTraductor(http: HttpClient) {
-  return new TranslateHttpLoader(http, '/assets/i18n/','.json');
+  let id = location.origin + '/assets/i18n/'
+  console.log(id);
+  return new TranslateHttpLoader(http, `${id}`,'.json');
 }
 
 @NgModule({
