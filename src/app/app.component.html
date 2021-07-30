@@ -1,0 +1,324 @@
+<nav class="navbar navbar-expand-lg fixed-top bg-gym">
+  <div class="container-fluid">
+    <a style="display: flex; font-weight: 600;" class="navbar-brand" href="#">
+      <p style="color: #fff;">Gym</p>
+      <p style="color: orange;">Fit</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">{{ 'inicio' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">{{ 'nosotros' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#planes">{{ 'precios' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#entrenadores">{{ 'entrenadores' | translate}}</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            {{ 'idioma' | translate}}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a (click)="cambiarIdioma('es')" class="dropdown-item" style="color: black;">Es</a></li>
+            <li><a (click)="cambiarIdioma('en')" class="dropdown-item" style="color: black;">En</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CAROUSEL -->
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active img-1" data-bs-interval="4000">
+      <div class="carousel-text">
+        <h1>{{ 'carousel1Title1' | translate}}</h1>
+        <h1 style="color: orange;">{{ 'carousel1Title2' | translate}}</h1>
+        <h1>{{ 'carousel1Title3' | translate}}</h1>
+        <a href="#" class="btn btn-dark btn-outline-light mt-5 pt-2 pb-2 ps-4 pe-4">{{ 'carousel1Btn' | translate}}</a>
+      </div>
+    </div>
+    <div class="carousel-item img-2" data-bs-interval="4000">
+      <div class="carousel-text">
+        <h1 style="color: orange;">{{ 'carousel2Title' | translate}}</h1>
+        <p>{{ 'carousel2Text' | translate}}</p>
+        <a href="#" class="btn btn-dark btn-outline-light pt-2 pb-2 ps-4 pe-4">{{ 'carousel1Btn' | translate}}</a>
+      </div>
+    </div>
+    <div class="carousel-item img-3">
+      <div class="carousel-text">
+        <h1 style="color: orange;">{{ 'carousel3Title' | translate}}</h1>
+        <p>{{ 'carousel3Text' | translate}}</p>
+        <a href="#" class="btn btn-dark btn-outline-light pt-2 pb-2 ps-4 pe-4">{{ 'carousel1Btn' | translate}}</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- ABOUT -->
+
+<div id="about">
+  <div class="container">
+    <div class="items-about">
+      <div class="items-about-card">
+        <i class="fas fa-dumbbell fa-3x"></i>
+        <h3>{{ 'aboutItem1Title' | translate}}</h3>
+        <p>{{ 'aboutItem1Text' | translate}}</p>
+      </div>
+      <div class="items-about-card">
+        <i class="far fa-infinity fa-3x"></i>
+        <h3>{{ 'aboutItem2Title' | translate}}</h3>
+        <p>{{ 'aboutItem2Text' | translate}}</p>
+      </div>
+      <div class="items-about-card">
+        <i class="fas fa-id-card-alt fa-3x"></i>
+        <h3>{{ 'aboutItem3Title' | translate}}</h3>
+        <p>{{ 'aboutItem3Text' | translate}}</p>
+      </div>
+      <div class="items-about-card">
+        <i class="fas fa-virus-slash fa-3x"></i>
+        <h3>{{ 'aboutItem4Title' | translate}}</h3>
+        <p>{{ 'aboutItem4Text' | translate}}</p>
+      </div>
+    </div>
+    <div class="foto-texto">
+      <div class="texto">
+        <h1>{{ 'aboutFotoTextoTitle1' | translate}} <b>{{ 'aboutFotoTextoTitle2' | translate}}</b></h1>
+        <p>{{ 'aboutFotoTexto' | translate}}</p>
+        <div class="comprar">
+          <a href="#" class="btn btn-success">{{ 'aboutFotoTextoBuy' | translate}}</a>
+        </div>
+      </div>
+      <div class="imagen">
+        <img src="/assets/img/about-img.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fotos gym -->
+
+<div id="galeria">
+  <div class="container">
+    <div class="titulo-galeria">
+      <h1>{{ 'galeriaTitulo1' | translate}} <span style="color: orange;">{{ 'galeriaTitulo2' | translate}}</span>
+      </h1>
+      <p>{{ 'galeriaTituloText' | translate}}</p>
+    </div>
+  </div>
+  <div class="fotos-galeria">
+    <div class="foto-galeria-baile p-text">
+      <p>{{ 'galeriaBaile' | translate}}</p>
+    </div>
+    <div class="foto-galeria-musculacion p-text">
+      <p>{{ 'galeriaMusculacion' | translate}}</p>
+    </div>
+    <div class="foto-galeria-funcional p-text">
+      <p>{{ 'galeriaFuncional' | translate}}</p>
+    </div>
+    <div class="foto-galeria-cardio p-text">
+      <p>{{ 'galeriaCardio' | translate}}</p>
+    </div>
+    <div class="foto-galeria-coach p-text">
+      <p>{{ 'galeriaEntrenador' | translate}}</p>
+    </div>
+    <div class="foto-galeria-relajacion p-text">
+      <p>{{ 'galeriaZonas' | translate}}</p>
+    </div>
+  </div>
+</div>
+
+<div id="planes">
+  <div class="container">
+    <div class="planes-titulo mb-5 text-center">
+      <h1>{{ 'planesTitulo' | translate}}</h1>
+      <p>{{ 'planesText' | translate}}</p>
+    </div>
+    <div class="planes-tipos">
+      <div class="plan-card">
+        <div class="plan-card-title">
+          <h3>{{ 'planCardTituloB' | translate}}</h3>
+          <div class="plan-precio">
+            <h2>$ 39.900/mes</h2>
+          </div>
+          <p>{{ 'planCardTextB' | translate}}</p>
+        </div>
+        <hr>
+        <div class="plan-card-body">
+          <p>{{ 'planCardBeneficios' | translate}}</p>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardCardio' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardMusculacion' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardFuncionalB' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardPersonalB' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardBaileB' | translate}}</p>
+          </div>
+          <a href="#" class="btn btn-light btn-outline-dark mt-3">{{ 'planCardBoton' | translate}}</a>
+        </div>
+      </div>
+      <div class="plan-card">
+        <div class="plan-card-title">
+          <h3>{{ 'planCardTituloV' | translate}}</h3>
+          <div class="plan-precio">
+            <h2>$ 59.900/mes</h2>
+          </div>
+          <p>{{ 'planCardTextV' | translate}}"</p>
+        </div>
+        <hr>
+        <div class="plan-card-body">
+          <p>{{ 'planCardBeneficios' | translate}}</p>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardCardio' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardMusculacion' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardFuncionalV' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardPersonalV' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardBaileV' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardRelajacionV' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardSedesV' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardZona' | translate}}</p>
+          </div>
+          <a href="#" class="btn btn-light btn-outline-dark mt-3">{{ 'planCardBoton' | translate}}</a>
+        </div>
+      </div>
+      <div class="plan-card">
+        <div class="plan-card-title">
+          <h3>{{ 'planCardTituloV2' | translate}}</h3>
+          <div class="plan-precio">
+            <h2>$ 89.900/mes</h2>
+          </div>
+          <p>{{ 'planCardTextV' | translate}}</p>
+        </div>
+        <hr>
+        <div class="plan-card-body">
+          <p>{{ 'planCardBeneficios' | translate}}</p>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardCardio' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardMusculacion' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardFuncionalV2' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardPersonalV2' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardBaileV2' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardRelajacionV2' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardSedesV' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardZona' | translate}}</p>
+          </div>
+          <div class="plan-card-body-beneficios">
+            <i class="fal fa-check"></i>
+            <p>{{ 'planCardAmigo' | translate}}</p>
+          </div>
+          <a href="#" class="btn btn-light btn-outline-dark mt-3">{{ 'planCardBoton' | translate}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ENTRENADORES -->
+
+<div id="entrenadores">
+  <div class="coach-title">
+    <h1>{{ 'coachTitle' | translate}}</h1>
+    <p>{{ 'coachText' | translate}}</p>
+  </div>
+  <div class="coach-card">
+    <div class="coach-card-coach">
+      <img src="/assets/img/coach-1.jfif" alt="">
+      <p class="mt-2">Augusto Almeyra</p>
+    </div>
+    <div class="coach-card-coach">
+      <img src="/assets/img/coach-2.jpg" alt="">
+      <p class="mt-2">Miguel Pedraza</p>
+    </div>
+    <div class="coach-card-coach">
+      <img src="/assets/img/coach-3.jpg" alt="">
+      <p class="mt-2">Andres Figeroa</p>
+    </div>
+    <div class="coach-card-coach">
+      <img src="/assets/img/coach-4.png" alt="">
+      <p class="mt-2">Natalia Castañeda</p>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

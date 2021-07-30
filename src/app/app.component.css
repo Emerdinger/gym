@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/barista-script');
+@import url('https://fonts.cdnfonts.com/css/insaniburger');
+@import url('https://fonts.cdnfonts.com/css/flow-ext');
+
+:root{
+	scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'Poppins';
+}
+
+.bg-gym {
+    background-color: rgba(38, 38, 38, .9);
+}
+
+.navbar .container-fluid a{
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-menu a {
+    color: black;
+}
+
+.carousel-inner .img-1{
+    background: url(/assets/img/slide01.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-inner .img-2{
+    background: url(/assets/img/slide02.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-inner .img-3{
+    background: url(/assets/img/slide03.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-inner .carousel-text {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner .carousel-text h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: -.5px -.5px .5px #000, .5px .5px .5px #000, -.5px .5px .5px #000, .5px -.5px .5px #000;
+}
+
+.carousel-inner .carousel-text p {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+}
+
+/* ABOUT */
+
+#about{
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(236,161,39,1) 0%, rgba(236,161,39,1) 44%, rgba(255,132,0,1) 100%);
+}
+
+#about{
+    color: #fff;
+}
+.fa-3x {
+    color: #000;
+}
+
+.items-about {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.items-about-card h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.items-about-card p{
+    font-weight: 200;
+}
+
+.foto-texto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+    margin-top: 60px;
+}
+
+.foto-texto .texto {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.foto-texto .texto .comprar {
+    text-align: center;
+}
+
+.foto-texto .texto h1 {
+    font-size: 50px;
+}
+
+.foto-texto .imagen img {
+    width: 100%;
+    height: cover;
+    margin-bottom: 40px;
+}
+
+/* GALERÍA */
+
+#galeria {
+    width: 100%;
+}
+
+#galeria .titulo-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#galeria .titulo-galeria h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#galeria .titulo-galeria p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#galeria .fotos-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.foto-galeria-baile {
+    background: url(/assets/img/g-baile.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.foto-galeria-musculacion {
+    background: url(/assets/img/g-musculacion.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.foto-galeria-funcional {
+    background: url(/assets/img/g-funcional.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.foto-galeria-cardio {
+    background: url(/assets/img/g-cardio.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.foto-galeria-coach {
+    background: url(/assets/img/g-personal.png) no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.foto-galeria-relajacion {
+    background: url(/assets/img/g-relajacion.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+}
+
+#galeria .p-text p{
+    text-align: center;
+    position: relative;
+    top: 90%;
+    color: #fff;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+}
+
+/* Planes */
+
+#planes {
+    margin: 80px 0;
+}
+
+#planes .planes-titulo h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#planes .planes-titulo p { 
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#planes .planes-tipos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: .5rem;
+}
+
+#planes .planes-tipos .plan-card {
+    padding: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out ;
+}
+
+#planes .planes-tipos .plan-card:hover {
+    background-color: rgba(236,161,39,1);
+}
+
+#planes .planes-tipos .plan-card .plan-card-title h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#planes .planes-tipos .plan-card .plan-card-title .plan-precio h2{
+    text-align: center;
+    font-weight: 400;
+}
+
+#planes .plan-card-body {
+    text-align: center;
+}
+
+#planes .plan-card-body .plan-card-body-beneficios {
+    display: flex;
+    text-align: start;
+}
+
+#planes .plan-card-body .plan-card-body-beneficios p {
+    margin-left: 10px;
+}
+
+/* ENTRENADORES */
+
+#entrenadores {
+    background: rgb(13,13,13);
+    color: #fff;
+}
+
+.coach-title {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.coach-title h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.coach-title p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.coach-card {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: .5rem;
+    padding-bottom: 80px;
+}
+
+.coach-card-coach {
+    text-align: center;
+}
+
+.coach-card-coach img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 1000px) {
+    .foto-texto {
+        grid-template-columns: 1fr;
+    }
+
+    .items-about {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .coach-card {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    #galeria .fotos-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #planes .planes-tipos {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-item img{
+        width: 130%;
+    }
+
+    #galeria .fotos-galeria {
+        grid-template-columns: 1fr;
+    }
+
+    #planes .planes-tipos {
+        grid-template-columns: 1fr;
+    }
+
+    .coach-card {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel-item img{
+        width: 200%;
+    }
+
+    .items-about {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-texto .texto h1 {
+        font-size: 40px;
+    }
+
+    .carousel-inner .carousel-text h1 {
+        font-size: 45px;
+    }
+
+    #planes .planes-titulo h1 {
+        font-size: 35px;
+    }
+    
+    #planes .planes-titulo p { 
+        font-size: 15px;
+    }
+
+    .coach-title h1{
+        font-size: 35px;
+    }
+    
+    .coach-title p{
+        font-size: 15px;
+    }
+
+    .coach-card {
+        grid-template-columns: 1fr;
+    }
+}
