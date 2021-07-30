@@ -25,19 +25,19 @@
 }
 
 .carousel-inner .img-1{
-    background: url(/assets/img/slide01.jpg) no-repeat center/cover;
+    background: url(../assets/img/slide01.jpg) no-repeat center/cover;
     width: 100%;
     height: 100vh;
 }
 
 .carousel-inner .img-2{
-    background: url(/assets/img/slide02.jpg) no-repeat center/cover;
+    background: url(../assets/img/slide02.jpg) no-repeat center/cover;
     width: 100%;
     height: 100vh;
 }
 
 .carousel-inner .img-3{
-    background: url(/assets/img/slide03.jpg) no-repeat center/cover;
+    background: url(../assets/img/slide03.jpg) no-repeat center/cover;
     width: 100%;
     height: 100vh;
 }
@@ -158,37 +158,37 @@
 }
 
 .foto-galeria-baile {
-    background: url(/assets/img/g-baile.jpg) no-repeat center/cover;
+    background: url(../assets/img/g-baile.jpg) no-repeat center/cover;
     width: 100%;
     height: 50vh;
 }
 
 .foto-galeria-musculacion {
-    background: url(/assets/img/g-musculacion.jpg) no-repeat center/cover;
+    background: url(../assets/img/g-musculacion.jpg) no-repeat center/cover;
     width: 100%;
     height: 50vh;
 }
 
 .foto-galeria-funcional {
-    background: url(/assets/img/g-funcional.jpg) no-repeat center/cover;
+    background: url(../assets/img/g-funcional.jpg) no-repeat center/cover;
     width: 100%;
     height: 50vh;
 }
 
 .foto-galeria-cardio {
-    background: url(/assets/img/g-cardio.jpg) no-repeat center/cover;
+    background: url(../assets/img/g-cardio.jpg) no-repeat center/cover;
     width: 100%;
     height: 50vh;
 }
 
 .foto-galeria-coach {
-    background: url(/assets/img/g-personal.png) no-repeat center/cover;
+    background: url(../assets/img/g-personal.png) no-repeat center/cover;
     width: 100%;
     height: 50vh;
 }
 
 .foto-galeria-relajacion {
-    background: url(/assets/img/g-relajacion.jpg) no-repeat center/cover;
+    background: url(../assets/img/g-relajacion.jpg) no-repeat center/cover;
     width: 100%;
     height: 50vh;
 }
