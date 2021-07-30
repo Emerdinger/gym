@@ -9,7 +9,7 @@ import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 
 export function cargarTraductor(http: HttpClient) {
-  let id = location.origin + '/assets/i18n/'
+  let id = location.origin + '/gym/assets/i18n/'
   console.log(id);
   return new TranslateHttpLoader(http, `${id}`,'.json');
 }
